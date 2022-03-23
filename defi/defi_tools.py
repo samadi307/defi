@@ -480,7 +480,7 @@ def pcsPairInfo(base, quote):
                 }
                 * price is actually a ratio between base/quote tokens
     """
-    url = "https://api.pancakeswap.info/api/pairs"
+    url = "https://api.pancakeswap.info/api/v2/pairs"
     r = requests.get(url).json()
     data = r.get('data', None)
     res = f"Not found: {base}-{quote}"
